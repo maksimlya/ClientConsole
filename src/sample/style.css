@@ -1,0 +1,76 @@
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #BDBDBD;
+}
+.tab:selected .tab-label {
+    -fx-font-weight: bold;
+
+
+
+}
+
+.combo-box .list-cell{
+    -fx-background-color:
+            #000000,
+            linear-gradient(#7ebcea, #2f4b8f),
+            linear-gradient(#426ab7, #263e75),
+            linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.combo-box .cell:hover{
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+.combo-box:hover{
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+.text-field{
+    -fx-font-weight: bold;
+}
+
+.tab-pane{
+    -fx-background-color:
+            #000000,
+            linear-gradient(#7ebcea, #2f4b8f),
+            linear-gradient(#426ab7, #557572),
+            linear-gradient(#395cab, #00a6b1);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.check-box{
+    -fx-text-fill: #fefffd;
+    -fx-font-weight: bold;
+}
+
+.label{
+    -fx-text-fill: #fefffd;
+    -fx-font-weight: bold;
+}
+
+
+
+
+
+.button{
+    -fx-background-color:
+            #000000,
+            linear-gradient(#7ebcea, #2f4b8f),
+            linear-gradient(#426ab7, #263e75),
+            linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 6 20 6 20;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}

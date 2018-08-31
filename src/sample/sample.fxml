@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<TabPane id="mainWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
   <tabs>
     <Tab text="Add Vehicles">
       <content>
@@ -24,10 +24,10 @@
                <children>
                   <GridPane alignment="CENTER" gridLinesVisible="true" prefHeight="875.0" prefWidth="1000.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <columnConstraints>
-                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="230.0" minWidth="10.0" prefWidth="175.0" />
-                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="106.0" />
-                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="134.0" />
-                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="224.0" minWidth="10.0" prefWidth="185.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="230.0" minWidth="10.0" prefWidth="176.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="167.0" minWidth="10.0" prefWidth="149.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="203.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="261.0" minWidth="10.0" prefWidth="261.0" />
                     </columnConstraints>
                     <rowConstraints>
                       <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
@@ -45,19 +45,19 @@
                               <Font name="Arial Bold" size="12.0" />
                            </font>
                         </CheckBox>
-                        <Button fx:id="add_launcher" mnemonicParsing="false" onAction="#addMissileLauncher" prefHeight="25.0" prefWidth="140.0" text="Add Missile Launcher" GridPane.columnIndex="3" />
-                        <Label layoutX="20.0" layoutY="51.0" prefHeight="30.0" prefWidth="161.0" text="Add Launcher Destructor:" GridPane.rowIndex="1">
+                        <Button fx:id="add_launcher" mnemonicParsing="false" onAction="#addMissileLauncher" prefHeight="25.0" prefWidth="216.0" text="Add Missile Launcher" GridPane.columnIndex="3" />
+                        <Label layoutX="20.0" layoutY="51.0" prefHeight="30.0" prefWidth="172.0" text="Add Launcher Destructor:" GridPane.rowIndex="1">
                            <font>
                               <Font name="Arial Bold" size="12.0" />
                            </font>
                         </Label>
-                        <Button fx:id="add_launcher_destructor" layoutX="428.0" layoutY="54.0" mnemonicParsing="false" onAction="#addLauncherDestructor" prefHeight="25.0" prefWidth="157.0" text="Add Launcher Destructor" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Button fx:id="add_launcher_destructor" layoutX="428.0" layoutY="54.0" mnemonicParsing="false" onAction="#addLauncherDestructor" prefHeight="25.0" prefWidth="218.0" text="Add Launcher Destructor" GridPane.columnIndex="3" GridPane.rowIndex="1" />
                         <Label layoutX="26.0" layoutY="51.0" prefHeight="30.0" prefWidth="162.0" text="Add Missile Destructor:" GridPane.rowIndex="2">
                            <font>
                               <Font name="Arial Bold" size="12.0" />
                            </font>
                         </Label>
-                        <Button fx:id="add_missile_destructor" layoutX="439.0" layoutY="166.0" mnemonicParsing="false" onAction="#addMissileDestructor" prefHeight="25.0" prefWidth="157.0" text="Add Missile Destructor" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Button fx:id="add_missile_destructor" layoutX="439.0" layoutY="166.0" mnemonicParsing="false" onAction="#addMissileDestructor" prefHeight="25.0" prefWidth="224.0" text="Add Missile Destructor" GridPane.columnIndex="3" GridPane.rowIndex="2" />
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
                            <children>
                               <Label prefHeight="30.0" prefWidth="23.0" text="ID:">
@@ -88,7 +88,7 @@
                               <TextField fx:id="missile_destructor_id" onKeyReleased="#changeMissileDestructorId" prefHeight="25.0" prefWidth="75.0" text="D301" />
                            </children>
                         </HBox>
-                        <ComboBox fx:id="type_box" prefHeight="25.0" prefWidth="78.0" promptText="Plane" visibleRowCount="2" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <ComboBox fx:id="type_box" prefHeight="38.0" prefWidth="142.0" promptText="Plane" styleClass="combo-box" visibleRowCount="2" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                      </children>
                      <opaqueInsets>
                         <Insets />
@@ -101,12 +101,12 @@
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <GridPane gridLinesVisible="true" prefHeight="448.0" prefWidth="600.0">
+                  <GridPane gridLinesVisible="true" prefHeight="348.0" prefWidth="800.0">
                     <columnConstraints>
-                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="197.0" minWidth="10.0" prefWidth="126.0" />
-                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="161.0" />
-                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="206.0" minWidth="10.0" prefWidth="197.0" />
-                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="111.0" minWidth="10.0" prefWidth="111.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="197.0" minWidth="10.0" prefWidth="156.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="244.0" minWidth="10.0" prefWidth="214.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="296.0" minWidth="10.0" prefWidth="248.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="160.0" />
                     </columnConstraints>
                     <rowConstraints>
                       <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
@@ -114,17 +114,17 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Label prefHeight="30.0" prefWidth="109.0" text="Launch Missile:">
+                        <Label prefHeight="30.0" prefWidth="128.0" text="Launch Missile:">
                            <font>
                               <Font name="Arial Bold" size="12.0" />
                            </font>
                         </Label>
-                        <Label layoutX="34.0" layoutY="70.0" prefHeight="30.0" prefWidth="110.0" text="Destroy Missile:" GridPane.rowIndex="1">
+                        <Label layoutX="34.0" layoutY="70.0" prefHeight="30.0" prefWidth="126.0" text="Destroy Missile:" GridPane.rowIndex="1">
                            <font>
                               <Font name="Arial Bold" size="12.0" />
                            </font>
                         </Label>
-                        <Label layoutX="34.0" layoutY="220.0" prefHeight="30.0" prefWidth="112.0" text="Destroy Launcher:" GridPane.rowIndex="2">
+                        <Label layoutX="34.0" layoutY="220.0" prefHeight="30.0" prefWidth="131.0" text="Destroy Launcher:" GridPane.rowIndex="2">
                            <font>
                               <Font name="Arial Bold" size="12.0" />
                            </font>
@@ -133,7 +133,7 @@
                            <children>
                               <HBox alignment="CENTER" prefHeight="36.0" prefWidth="162.0">
                                  <children>
-                                    <Label prefHeight="36.0" prefWidth="86.0" text="Launcher ID:">
+                                    <Label prefHeight="36.0" prefWidth="96.0" text="Launcher ID:">
                                        <font>
                                           <Font name="Arial Bold" size="12.0" />
                                        </font>
@@ -143,7 +143,7 @@
                               </HBox>
                               <HBox alignment="CENTER" prefHeight="36.0" prefWidth="162.0">
                                  <children>
-                                    <Label prefHeight="36.0" prefWidth="86.0" text="Missile ID:">
+                                    <Label prefHeight="36.0" prefWidth="95.0" text="Missile ID:">
                                        <font>
                                           <Font name="Arial Bold" size="12.0" />
                                        </font>
@@ -162,7 +162,7 @@
                                           <Font name="Arial Bold" size="12.0" />
                                        </font>
                                     </Label>
-                                    <TextField fx:id="destination_fld" prefHeight="26.0" prefWidth="98.0" text="Beer-Sheva" />
+                                    <TextField fx:id="destination_fld" prefHeight="26.0" prefWidth="104.0" text="Beer-Sheva" />
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER" prefHeight="26.0" prefWidth="156.0">
@@ -172,17 +172,17 @@
                                           <Font name="Arial Bold" size="12.0" />
                                        </font>
                                     </Label>
-                                    <TextField fx:id="fly_time_fld" prefHeight="36.0" prefWidth="44.0" text="12" />
+                                    <TextField fx:id="fly_time_fld" prefHeight="26.0" prefWidth="70.0" text="12" />
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER" prefHeight="34.0" prefWidth="156.0">
                                  <children>
-                                    <Label prefHeight="40.0" prefWidth="109.0" text="Potential Damage:">
+                                    <Label prefHeight="34.0" prefWidth="82.0" text="Damage">
                                        <font>
                                           <Font name="Arial Bold" size="12.0" />
                                        </font>
                                     </Label>
-                                    <TextField fx:id="damage_fld" prefHeight="36.0" prefWidth="44.0" text="1500" />
+                                    <TextField fx:id="damage_fld" prefHeight="34.0" prefWidth="99.0" text="1500" />
                                  </children>
                               </HBox>
                            </children></VBox>
@@ -211,7 +211,7 @@
                         </HBox>
                         <HBox alignment="CENTER" layoutX="138.0" layoutY="309.0" prefHeight="36.0" prefWidth="162.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                            <children>
-                              <Label prefHeight="36.0" prefWidth="86.0" text="Destructor ID:">
+                              <Label prefHeight="36.0" prefWidth="110.0" text="Destructor ID:">
                                  <font>
                                     <Font name="Arial Bold" size="12.0" />
                                  </font>
@@ -221,7 +221,7 @@
                         </HBox>
                         <HBox alignment="CENTER" layoutX="301.0" layoutY="160.0" prefHeight="36.0" prefWidth="162.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                            <children>
-                              <Label prefHeight="36.0" prefWidth="86.0" text="Destructor ID:">
+                              <Label prefHeight="36.0" prefWidth="111.0" text="Destructor ID:">
                                  <font>
                                     <Font name="Arial Bold" size="12.0" />
                                  </font>
