@@ -10,17 +10,16 @@ import javafx.scene.input.KeyEvent;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.io.PrintStream;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
-    String launcherIdValue = "L101";
-    String launcherDestructorIdValue = "LD201";
-    String missileDestructorIdValue = "D301";
-    String missileIdValue = "M1";
+    private  String launcherIdValue = "L101";
+    private String launcherDestructorIdValue = "LD201";
+    private String missileDestructorIdValue = "D301";
+    private String missileIdValue = "M1";
 
-    DataOutputStream outputStream;
+    private DataOutputStream outputStream;
 
     {
         try {
